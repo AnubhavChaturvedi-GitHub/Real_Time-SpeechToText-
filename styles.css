@@ -1,0 +1,77 @@
+/* Base styles */
+body {
+    background: radial-gradient(#020202, #000);
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+}
+
+h1{
+    color:blue;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(#020202, #000);
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.2) inset;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Start button */
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+#start:hover {
+    background-color: #0a0;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* End button */
+#end {
+    display: none; /* Hidden by default */
+    background-color: #0a0;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Output container */
+.output {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    text-align: center;
+    color: #fff;
+}
+
+.output p {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Glowing animation for container */
+@keyframes glowing {
+    0% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); }
+    100% { box-shadow: 0 0 50px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3); }
+}
